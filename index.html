@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emploi RDC — Trouvez votre prochaine opportunité</title>
+<style>
+:root{--green:#0b6b4b;--green2:#e8f5ee;--ink:#17251f;--muted:#64736b;--line:#e1e9e4;--bg:#f6f9f7;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink)}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:3}.nav{max-width:1120px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-weight:850;font-size:21px;letter-spacing:-.6px;color:var(--green)}.brand span{color:#17251f}.nav small{color:var(--muted)}.pill{background:var(--green2);color:var(--green);padding:8px 12px;border-radius:99px;font-size:12px;font-weight:750}
+main{max-width:1120px;margin:auto;padding:30px 22px 60px}.hero{background:linear-gradient(120deg,#073d2e,#0b6b4b);color:white;border-radius:24px;padding:38px;display:grid;grid-template-columns:1.5fr 1fr;gap:24px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:1.8px;font-size:11px;font-weight:800;color:#bde9d0}.hero h1{font-size:clamp(30px,4vw,46px);line-height:1.07;letter-spacing:-1.6px;margin:12px 0}.hero p{color:#d7eee2;line-height:1.6;max-width:570px}.hero-card{background:#fff;color:var(--ink);border-radius:18px;padding:20px;box-shadow:0 16px 40px #00291c35}.hero-card strong{display:block;font-size:28px}.hero-card span{font-size:13px;color:var(--muted)}
+.search{display:grid;grid-template-columns:1.5fr 1fr 1fr auto;gap:10px;background:#fff;padding:13px;border:1px solid var(--line);border-radius:16px;margin-top:22px;box-shadow:0 8px 24px #183b2810}
+input,select{font:inherit;min-width:0;width:100%;padding:13px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}button,.btn{border:0;background:var(--green);color:#fff;font-weight:750;padding:13px 17px;border-radius:10px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}button:hover,.btn:hover{background:#084d37}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:32px 0 16px}.section-head h2{font-size:23px;margin:0 0 5px;letter-spacing:-.5px}.section-head p{margin:0;color:var(--muted);font-size:13px}.count{font-size:13px;color:var(--muted)}
+.layout{display:grid;grid-template-columns:1fr 300px;gap:18px}.jobs{display:grid;gap:12px}.job{background:#fff;border:1px solid var(--line);border-radius:16px;padding:19px;display:grid;grid-template-columns:1fr auto;gap:12px}.job h3{margin:0 0 7px;font-size:18px}.company{font-weight:700;color:#31443a;font-size:13px}.meta{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:12px;color:var(--muted);font-size:12px}.tag{display:inline-block;background:#f0f5f2;border-radius:7px;padding:6px 8px;font-size:11px;color:#365447;font-weight:750;margin:0 5px 5px 0}.job-actions{display:flex;flex-direction:column;align-items:end;justify-content:space-between;gap:10px}.date{font-size:11px;color:var(--muted);white-space:nowrap}.apply{font-size:12px;padding:10px 12px;white-space:nowrap}
+aside{display:grid;align-content:start;gap:14px}.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:19px}.panel h3{font-size:16px;margin:0 0 10px}.panel p,.panel li{font-size:13px;color:var(--muted);line-height:1.55}.panel ul{padding-left:18px;margin-bottom:0}.schedule{display:grid;gap:10px}.schedule-row{display:flex;justify-content:space-between;gap:12px;font-size:12px;padding-bottom:9px;border-bottom:1px solid var(--line)}.schedule-row:last-child{border:0;padding-bottom:0}.status{color:#a66a0a;background:#fff4d8;border-radius:6px;padding:4px 7px;font-size:10px;font-weight:800}
+.notice{margin-top:18px;padding:14px 16px;background:#fff8e9;border:1px solid #f2dfb5;color:#6d5520;border-radius:12px;font-size:12px;line-height:1.55}
+footer{border-top:1px solid var(--line);background:#fff;padding:22px;color:var(--muted);font-size:12px;text-align:center}
+.empty{background:#fff;border:1px dashed #cad8cf;border-radius:14px;padding:28px;text-align:center;color:var(--muted)}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:27px}.hero-card{display:none}.search{grid-template-columns:1fr 1fr}.search input{grid-column:1/-1}.layout{grid-template-columns:1fr}aside{grid-template-columns:1fr 1fr}.nav small{display:none}}
+@media(max-width:520px){main{padding:20px 13px 40px}.nav{padding:13px}.hero{border-radius:18px;padding:24px 20px}.search{grid-template-columns:1fr}.search input{grid-column:auto}.section-head{align-items:start;flex-direction:column}.job{grid-template-columns:1fr}.job-actions{align-items:start;flex-direction:row}.date{white-space:normal}aside{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">EMPLOI <span>RDC</span></div><small>Les opportunités professionnelles en un seul endroit</small><div class="pill">VERSION DÉMO</div></div></header>
+<main>
+<section class="hero">
+ <div><div class="eyebrow">Votre carrière commence ici</div><h1>Trouvez une opportunité.<br>Construisez votre avenir.</h1><p>Explorez les offres d'emploi, stages et opportunités professionnelles en République démocratique du Congo.</p></div>
+ <div class="hero-card"><strong id="total">6 offres</strong><span>Exemples d'annonces pour tester la recherche</span><hr style="border:0;border-top:1px solid #e1e9e4;margin:17px 0"><strong style="font-size:18px">RDC entière</strong><span>Kinshasa, Haut-Katanga et autres provinces</span></div>
+</section>
+<form class="search" id="searchForm">
+ <input id="q" placeholder="Métier, entreprise ou mot-clé" aria-label="Métier, entreprise ou mot-clé">
+ <select id="city" aria-label="Ville"><option value="">Toutes les villes</option><option>Kinshasa</option><option>Lubumbashi</option><option>Kolwezi</option><option>Goma</option><option>Matadi</option></select>
+ <select id="type" aria-label="Type d'offre"><option value="">Tous les contrats</option><option>CDI</option><option>CDD</option><option>Stage</option><option>Consultance</option></select>
+ <button type="submit">Rechercher</button>
+</form>
+<div class="section-head"><div><h2>Offres à découvrir</h2><p>Recherchez et filtrez les annonces disponibles.</p></div><div class="count" id="resultCount">6 résultats</div></div>
+<div class="layout"><section class="jobs" id="jobs"></section>
+<aside>
+ <div class="panel"><h3>Publication automatique</h3><p>Le calendrier prévu pour la future collecte des offres.</p><div class="schedule">
+ <div class="schedule-row"><span>Collecte des sources</span><span class="status">Toutes les 30 min</span></div>
+ <div class="schedule-row"><span>Vérification / doublons</span><span class="status">À chaque collecte</span></div>
+ <div class="schedule-row"><span>Résumé quotidien</span><span class="status">16 h 00</span></div>
+ </div><p style="margin-bottom:0">La planification affichée est indicative : l'automatisation réelle nécessite un serveur et des sources autorisées.</p></div>
+ <div class="panel"><h3>Conseils aux candidats</h3><ul><li>Vérifiez la date limite avant de postuler.</li><li>Préparez un CV adapté au poste.</li><li>Ne payez jamais pour obtenir une offre ou garantir un recrutement.</li></ul></div>
+ <div class="panel"><h3>Sources des annonces</h3><p>La version finale indiquera pour chaque offre le site ou l'organisme d'origine et un lien vers l'annonce officielle.</p></div>
+</aside></div>
+<div class="notice"><strong>Important :</strong> cette page est un prototype avec des annonces fictives de démonstration. Elle ne collecte pas encore les annonces réelles. Avant le lancement, nous connecterons des sources publiques autorisées, ajouterons la date de collecte, les liens d'origine et des contrôles anti-doublons.</div>
+</main>
+<footer>Emploi RDC · Prototype de démonstration · Les annonces présentées ici ne sont pas des offres réelles.</footer>
+<script>
+const jobs = [
+ {title:"Assistant administratif",company:"Entreprise de démonstration",city:"Kinshasa",type:"CDD",sector:"Administration",date:"Exemple",desc:"Appui administratif, classement des dossiers et préparation de rapports.",url:"#"},
+ {title:"Développeur web junior",company:"Entreprise de démonstration",city:"Kinshasa",type:"Stage",sector:"Informatique",date:"Exemple",desc:"Participation à la création et à la maintenance de sites web.",url:"#"},
+ {title:"Comptable",company:"Organisation de démonstration",city:"Lubumbashi",type:"CDI",sector:"Finance",date:"Exemple",desc:"Suivi des opérations comptables et préparation des pièces justificatives.",url:"#"},
+ {title:"Agent commercial",company:"Entreprise de démonstration",city:"Goma",type:"CDD",sector:"Commerce",date:"Exemple",desc:"Prospection, suivi des clients et préparation des rapports de vente.",url:"#"},
+ {title:"Technicien informatique",company:"Organisation de démonstration",city:"Kolwezi",type:"CDI",sector:"Informatique",date:"Exemple",desc:"Assistance aux utilisateurs et entretien du matériel informatique.",url:"#"},
+ {title:"Assistant de projet",company:"Organisation de démonstration",city:"Matadi",type:"Consultance",sector:"Gestion de projet",date:"Exemple",desc:"Appui à la coordination des activités et au suivi des résultats.",url:"#"}
+];
+const jobsEl=document.getElementById('jobs');
+function render(){
+ const q=document.getElementById('q').value.trim().toLowerCase(), city=document.getElementById('city').value, type=document.getElementById('type').value;
+ const filtered=jobs.filter(j=>(!q||[j.title,j.company,j.sector,j.desc].join(' ').toLowerCase().includes(q))&&(!city||j.city===city)&&(!type||j.type===type));
+ document.getElementById('resultCount').textContent=filtered.length+' résultat(s)';
+ document.getElementById('total').textContent=filtered.length+' offre'+(filtered.length>1?'s':'');
+ jobsEl.innerHTML=filtered.length?filtered.map(j=>`<article class="job"><div><h3>${j.title}</h3><div class="company">${j.company}</div><div style="margin-top:10px"><span class="tag">${j.type}</span><span class="tag">${j.sector}</span></div><div class="meta"><span>📍 ${j.city}</span><span>🗓️ ${j.date}</span></div><p style="font-size:13px;line-height:1.5;color:#64736b;margin-bottom:0">${j.desc}</p></div><div class="job-actions"><span class="date">Annonce démo</span><a class="btn apply" href="${j.url}" onclick="event.preventDefault();alert('Prototype : le lien officiel de candidature sera ajouté lorsque les sources réelles seront connectées.')">Voir l'offre ↗</a></div></article>`).join(''):'<div class="empty">Aucune annonce ne correspond à votre recherche. Essayez un autre mot-clé ou filtre.</div>';
+}
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();render()});
+document.getElementById('q').addEventListener('input',render);
+document.getElementById('city').addEventListener('change',render);
+document.getElementById('type').addEventListener('change',render);
+render();
+</script>
+</body>
+</html>
